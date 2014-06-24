@@ -17,7 +17,6 @@ p{
 
 h1, h2, h3, h4, h5, h6 {
     color: #272727;
-    font-family: 'Montserrat',sans-serif;
     font-weight: 400;
     line-height: 1.17em;
     /*margin: 0 0 20px;*/
@@ -78,7 +77,6 @@ section{
 
 .welcome-2 h1 {
 	color: white;
-	border: 8px solid white;
 	display: inline-block;
 	padding: 20px;
 	background-color: rgba(0,0,0,0.4);
@@ -93,22 +91,18 @@ section{
 /* Navbar 2
 ======================================== */
 .navbar-2.navbar-default {
-	background-color: #222;
 	letter-spacing: 1.5px;
 	padding: 10px 0;
 }
 
 .navbar-2.navbar-default .navbar-nav > li > a {
-font-family: 'montserrat', sans-serif;
 font-size: 11px;
-text-transform: uppercase;
-color: #FFFFFF;
+color: #999;
 }
 
 
 .navbar-2.navbar-default .navbar-brand {
-	color: #FFFFFF;
-	font-family: 'montserrat';
+	color: #999;
 	font-size: 20px;
 	font-weight: 700;
 }
@@ -120,7 +114,7 @@ font-size: 20px;
 
 .navbar-2.navbar-default .navbar-nav > li > a:hover,
 .navbar-2.navbar-default .navbar-nav > li > a:focus {
-	color: #888;
+	color: #fff;
 	-webkit-transition: color .2s ease-in-out;
 	-moz-transition: color .2s ease-in-out;
 	-ms-transition: color .2s ease-in-out;

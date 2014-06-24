@@ -14,3 +14,10 @@
  *= require 'bootstrap'
  *= require_tree .
  */
+
+/* NAV BAR */
+
+body .navbar{
+	background-color: rgba(69,76,71,1);
+	border: none;
+}
