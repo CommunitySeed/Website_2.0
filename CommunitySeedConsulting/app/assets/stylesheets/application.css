@@ -21,3 +21,7 @@ body .navbar{
 	background-color: rgba(69,76,71,1);
 	border: none;
 }
+
+.nav-logo{
+	padding: 10px 0;
+}
