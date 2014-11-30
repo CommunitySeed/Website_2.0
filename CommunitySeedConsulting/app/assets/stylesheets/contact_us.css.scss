@@ -1,0 +1,70 @@
+// Place all the styles related to the ContactUs controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/* Contact 1
+======================================== */
+.contact-1 h2{ 
+	margin-bottom: 20px; 
+	color: #454c47;
+
+}
+
+.contact-1 .placehold{ margin-bottom: 60px; }
+
+.contact-1 .contact-form input[type="text"], 
+.contact-1 .contact-form textarea{
+	outline: none;
+	width: 100%;
+	padding: 20px 20px;
+	margin-bottom: 15px;
+}
+
+.contact-1 .contact-form button{ padding: 15px; }
+
+.contact-1 ul{
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.contact-1 .contact-list li{
+	line-height: 28px;
+	font-size: 16px;
+}
+
+.contact-1 .contact-list i{
+	border: 1px solid #DDD;
+	border-radius: 20px;
+	height: 40px;
+	width: 40px;
+	text-align: center;
+	line-height: 40px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+// .contact-1 .social li{
+// 	display: inline-block;
+// 	width: 35px;
+// 	height: 35px;
+// 	border-radius: 3px;
+// 	text-align: center;
+// 	line-height: 35px;
+// 	webkit-transition: background-color ease-out 0.2s;
+// 	-moz-transition: background-color ease-out 0.2s;
+// 	-o-transition: background-color ease-out 0.2s;
+// 	transition: background-color ease-out 0.2s;
+// }
+
+// .contact-1 .social li.facebook { background: #204385; }
+// .contact-1 .social li.twitter { background: #2aa9e0; }
+// .contact-1 .social li.google-plus { background: #d3492c; }
+// .contact-1 .social li.linkedin { background: #0073b2; }
+// .contact-1 .social li.youtube { background: #e22d24; }
+
+// .contact-1 .social li:hover {
+// 	background: #31373a;
+// 	cursor: pointer;
+// }
+
+// .contact-1 .social li a { color: #fff; }

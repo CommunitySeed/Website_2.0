@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CommunitySeedConsulting</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <!-- ADD -->
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+
+
+<!-- only not show nav bar when first visit home page-->
+<% if controller.controller_name == 'home' %>
+	<header class="no-display">
+<% end %>
+
+<%= render 'layouts/navbar' %> 
+
+<% if controller.controller_name == 'home' %>
+	</header>
+<% end %>
+
+<%= yield %>
+
+<%= render 'layouts/footer' %> 
+
+</body>
+</html>
