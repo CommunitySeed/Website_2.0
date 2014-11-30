@@ -1,0 +1,128 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_self
+ *= require 'bootstrap'
+ *= require_tree .
+ */
+
+
+body {
+	font: 300 18px/30px "Open Sans",arial,sans-serif;
+
+	p{
+		font-size: 16px;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+	    color: #272727;
+	    font-weight: 400;
+	    line-height: 1.17em;
+			text-transform: none;
+	}
+
+	h1 { font-size: 3.5em; }
+	h2 { font-size: 2.4em; }
+	h3 { font-size: 30px; }
+	h4 { font-size: 1.8em; }
+	h5 { font-size: 21px; }
+	h6 { font-size: 16px; line-height: 22px; }
+
+
+	section{
+		padding: 50px 0;
+		padding-top: 100px;
+	}
+}
+
+.light-gray-bg{ background-color: #f5f5f5; }
+
+.dark-gray-bg{ background-color: #333333; }
+
+
+/* Sub-pages banner
+======================================== */
+
+.banner{
+	margin-top: 70px;
+	background-image: url("https://s3.amazonaws.com/communityseed/banner_sub-pages.jpg");
+	background-size: 100%;
+	padding: 10vh 0;
+	height: 20vh;
+	width: 100%;
+	display: table;
+
+	h2{
+		color: #454c47;
+		font-weight: bold;
+	}
+}
+
+
+/* Navbar 
+======================================== */
+
+body .no-display{
+	display:none;
+}
+
+body .navbar{
+	background-color: rgba(69,76,71,1);
+	border: none;
+	border-radius: 0;
+	margin-bottom: 0;
+
+}
+
+.nav-logo{
+	padding-top: 10px;
+}
+
+
+.navbar-2.navbar-default {
+	letter-spacing: 1.5px;
+	padding: 10px 0;
+}
+
+.navbar-2.navbar-default .navbar-nav > li > a {
+	font-size: 14px;
+	color: #999;
+}
+
+.navbar-2.navbar-default .navbar-nav > li > .active{
+		color: #fff;
+}
+
+.navbar-2.navbar-default .navbar-nav > li > a:hover,
+.navbar-2.navbar-default .navbar-nav > li > a:focus {
+	color: #fff;
+	-webkit-transition: color .2s ease-in-out;
+	-moz-transition: color .2s ease-in-out;
+	-ms-transition: color .2s ease-in-out;
+	-o-transition: color .2s ease-in-out;
+	transition: color .2s ease-in-out;
+}
+
+
+
+
+/* Footer 4
+======================================== */
+.footer-4{
+	border-top: 1px solid #f4f4f4;
+	padding: 20px 0;
+	
+	 p {
+		color: #454c47;
+		font-size: 12px;
+	}
+}
