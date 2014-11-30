@@ -1,201 +1,180 @@
-<nav id="navigation" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-	<div class="container">
-	<!-- Brand and toggle get grouped for better mobile display -->
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse-1">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			<%= link_to home_path, :class => "nav-logo" do %><%= image_tag("logo_no_bg.gif", height: '30')%><% end %> 
-		</div>
 
-		<!-- Collect the nav links, forms, and other content for toggling -->
-		<div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
-			<ul class="nav navbar-nav navbar-right">
-				<li class="active hidden"></li>
-				<li><a href="#who-we-are">Who We Are</a></li>
-				<li><a href="#community-partners">Community Partners</a></li>
-				<li><a href="#volunteer">Volunteer</a></li>
-				<li><a href="#supporters">Supporters</a></li>
-				<li><a href="#contact-us">Contact Us</a></li>
-			</ul>
 
-		</div><!-- /.navbar-collapse -->
-	</div><!-- /.container -->
-</nav>
+<!-- from http://bootsnipp.com/snippets/featured/responsive-quote-carousel -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/carousel.min.js"></script>
+
+<script type="text/javascript">
+  // When the DOM is ready, run this function
+$(document).ready(function() {
+  //Set the carousel options
+  $('#quote-carousel').carousel({
+    pause: true,
+    interval: 4000,
+  });
+});
+</script>
 
 
 <div class="welcome-2">
 	<div class="container center-vertically">
-		<h1 data-scroll-reveal>Growing Community Impact</h1><br>
-		<div data-scroll-reveal="wait .5s" href="#" class="fa fa-arrow"></div>
+    <div class="row">
+      <div class="transparent-background col-md-offset-3 col-md-6">
+    		<h1 data-scroll-reveal>Growing Community Impact.</h1>
+        <h4 data-scroll-reveal>Community Seed organizes professionals to give their time and skills to grow non-profits success</h4>
+      </div>
+    </div>
+    <br>
+		<div data-scroll-reveal="wait .5s">
+      <h5>Scroll down to learn more about us</h5><br>
+      <div class="fa fa-2x fa-angle-double-down"></div>
+    </div>
 	</div>
 </div>
 
-<section class="services-1">
-	<div data-scroll-reveal class="row">
-		<div class="col-md-10 col-md-offset-1">
-			<div class="col-md-4 text-center">
-				<img src="http://placehold.it/200x200&text=icon" alt="placehold.it" class="img-circle">
-				<h4>People</h4>
-				<p>We are experienced volunteers</p>
-			</div>
-			<div class="col-md-4 text-center">
-				<img src="http://placehold.it/200x200&text=icon" alt="placehold.it" class="img-circle">
-				<h4>Partner</h4>
-				<p>Who partner when non-profits</p>
-			</div>
-			<div class="col-md-4 text-center">
-				<img src="http://placehold.it/200x200&text=icon" alt="placehold.it" class="img-circle">
-				<h4>Solution</h4>
-				<p>To deliver solutions that make a difference</p>
-			</div>
-		</div>
-	</div>
+<!-- ABOUT US -->
+
+<section class="services-1 container">
+  
+    <div data-scroll-reveal class="row services-1-groupings">
+      <div class="col-md-4">
+        <h2>Experienced volunteers</h2>
+      </div>
+      <div class="col-md-8">
+        <p>Highly-skilled volunteer professionals who provide pro-bono consulting and professional services to non-profits ranging from marketing strategy to operational optimization</p>
+      </div>
+    </div>
+
+    <div data-scroll-reveal class="row services-1-groupings">
+      <div class="col-md-4">
+        <h2>Partnering with the non-profit sector</h2>
+      </div>
+      <div class="col-md-8">
+        <p>Community Seed facilitates grassroots growth of local non-profits – our Community Partners— by offering consultative services and providing better value to volunteers, donors, and communities who support a charitable cause.</p>
+      </div>
+    </div>
+
+    <div data-scroll-reveal class="row services-1-groupings">
+      <div class="col-md-4">
+        <h2>Delivering realistic & sustainable solutions</h2>
+      </div>
+      <div class="col-md-8">
+        <p>Our goal is to ensure Community Partners leave with the training and resources they need to implement positive change and continue to focus on improvements toward the achievement of their mission(s). We also leave them with a plan on how to track these improvements, and we check-up on clients and provide periodic review to enable steady growth</p>
+      </div>
+    </div>
+
 </section>
 
-<section>
-	<!--SERVICES -->
+<!--SERVICES -->
+
+<section class="services-2">
+  <div class="light-gray-bg">
+
+    <%= render 'shared/services' %>
+  </div>
 </section>
 
 
+
+
+
+
+<!--TESTIMONIALS -->
 <section>
-	<!--TESTIMONIALS -->
+
+	<div class="container">
+    <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+      <!-- Bottom Carousel Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#quote-carousel" data-slide-to="1"></li>
+        <li data-target="#quote-carousel" data-slide-to="2"></li>
+      </ol>
+      
+      <!-- Carousel Slides / Quotes -->
+      <div class="carousel-inner">
+      
+        <!-- Quote 1 -->
+        <div class="item active">
+          <blockquote>
+            <div class="row">
+              <div class="col-sm-3 text-center">
+                <img class="img-circle" src="https://s3.amazonaws.com/communityseed/Alzheimer+Society+Logo.jpg" style="width: 100px;height:100px;">
+              </div>
+              <div class="col-sm-9">
+                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum elit in arcu blandit.</h2>
+                <small>Alzheimer Society Toronto</small>
+              </div>
+            </div>
+          </blockquote>
+        </div>
+        <!-- Quote 2 -->
+        <div class="item">
+          <blockquote>
+            <div class="row">
+              <div class="col-sm-3 text-center">
+                <img src="https://s3.amazonaws.com/communityseed/World+Partnership+Walk+logo.jpg" style="width: 200px;">
+              </div>
+              <div class="col-sm-9">
+                <h2>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit!</h2>
+                <small>World Parntnership Walk</small>
+              </div>
+            </div>
+          </blockquote>
+        </div>
+        <!-- Quote 3 -->
+        <div class="item">
+          <blockquote>
+            <div class="row">
+             <div class="col-sm-3 text-center">
+                <img  src="https://s3.amazonaws.com/communityseed/Youth+Challenge+International+Logo.jpg" style="width: 200px;">
+              </div>
+              <div class="col-sm-9">
+                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam auctor nec lacus ut tempor. Mauris.</h2>
+                <small>Youth Challenger International</small>
+              </div>
+            </div>
+          </blockquote>
+        </div>
+      </div>
+      
+      <!-- Carousel Buttons Next/Prev -->
+      <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
+      <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
+    </div>                          
+  </div>
 </section>
 	
-	<!--CONTACT FORM -->
-<section class="call-to-action-1 light-gray-bg text-center">
-	<div class="container">
-		<div data-scroll-reveal class="row">
-			<div class="row">
-				<div class="col-lg-6">
-					<p>Interested in volunteering with us?</p>
-				</div>
-				<div class="col-lg-6">
-					<p>Interested in partnerning with us?</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-2 col-lg-offset-2">
-					<a href="#" data-id="section6" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target=".bs-example-modal-lg">
-						Start now
-					</a>
-
-					<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-					  <div class="modal-dialog modal-lg">
-					  	<div class="modal-content">
-						  	<div class="modal-header">
-						        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-						        <h4 class="modal-title">Volunteer Form</h4>
-					     	</div>
-							<br/>
-							<div class="modal-body">
-								<form class="form-horizontal" role="form">
-									<div class="form-group">
-										<label for="inputName" class="col-sm-2 control-label">Name</label>
-										<div class="col-sm-10">
-										  <input type="name" class="form-control" id="inputName" placeholder="Name">
-										</div>
-								  	</div>
-								  	<div class="form-group">
-										<label for="inputEmail" class="col-sm-2 control-label">Email</label>
-										<div class="col-sm-10">
-									  		<input type="email" class="form-control" id="inputEmail" placeholder="Email">
-										</div>
-								  	</div>
-								  <div class="form-group">
-									<label for="inputProfession" class="col-sm-2 control-label">I am...</label>
-									<div class="col-sm-10">
-										<select class="form-control">
-										  <option>a student</option>
-										  <option>a working professional</option>
-										  <option>other</option>
-										</select>
-									</div>
-								  </div>
-								  <div class="form-group">
-									<div class="col-sm-offset-2 col-sm-10">
-									  <button type="submit" class="btn btn-primary btn-block">Submit</button>
-									</div>
-								  </div>
-								</form>
-							</div>
-						</div>
-					  </div>
-					</div>
-
-				</div>
-				<div class="col-lg-2 col-lg-offset-4">
-					<a href="#" data-id="section6" class="btn btn-primary btn-lg btn-block">
-						Let's talk
-					</a>
-					
-					<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-					  <div class="modal-dialog modal-lg">
-					  	<div class="modal-content">
-						  	<div class="modal-header">
-						        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-						        <h4 class="modal-title">Community Partner Form</h4>
-					     	</div>
-							<br/>
-							<div class="modal-body">
-								<form class="form-horizontal" role="form">
-									<div class="form-group">
-										<label for="inputName" class="col-sm-2 control-label">Name</label>
-										<div class="col-sm-10">
-										  <input type="name" class="form-control" id="inputName" placeholder="Name">
-										</div>
-								  	</div>
-								  	<div class="form-group">
-										<label for="inputPosition" class="col-sm-2 control-label">Position</label>
-										<div class="col-sm-10">
-										  <input type="name" class="form-control" id="inputPosition" placeholder="Name">
-										</div>
-								  	</div>
-								  	<div class="form-group">
-										<label for="inputEmail" class="col-sm-2 control-label">Email</label>
-										<div class="col-sm-10">
-									  		<input type="email" class="form-control" id="inputEmail" placeholder="Email">
-										</div>
-								  	</div>
-
-									<div class="form-group">
-										<label for="inputCompany" class="col-sm-2 control-label">Company</label>
-										<div class="col-sm-10">
-										  <input type="name" class="form-control" id="inputCompany" placeholder="Company Name">
-										</div>
-								  	</div>
-								  <div class="form-group">
-									<label for="inputSize" class="col-sm-2 control-label">Size</label>
-									<div class="col-sm-10">
-										<select class="form-control">
-										  <option>< 10 employees</option>
-										  <option>11 - 100 employees</option>
-										  <option>> 100 employees</option>
-										</select>
-									</div>
-								  </div>
-								  <div class="form-group">
-									<div class="col-sm-offset-2 col-sm-10">
-									  <button type="submit" class="btn btn-primary btn-block">Submit</button>
-									</div>
-								  </div>
-								</form>
-							</div>
-						</div>
-					  </div>
-					</div>
-
-
-
-
-				</div>
-			</div>
-		</div>
-	</div>
+	<!--CALL TO ACTION -->
+<section class="call-to-action">
+  <div class="light-gray-bg text-center">
+  	<div class="container">
+  		<div data-scroll-reveal class="row">
+  			<div class="row">
+  				<div class="col-lg-6">
+  					<p>Interested in volunteering with us?</p>
+  				</div>
+  				<div class="col-lg-6">
+  					<p>Interested in partnerning with us?</p>
+  				</div>
+  			</div>
+  			<div class="row">
+  				<div class="col-lg-2 col-lg-offset-2">
+            <%= link_to volunteers_index_path do %>
+  						<div class="btn btn-green btn-lg btn-block">Start now</div>
+            <% end %>
+  				</div>
+  				<div class="col-lg-2 col-lg-offset-4">
+            <%= link_to community_partner_index_path do %>
+              <div class="btn btn-green btn-lg btn-block">Let's Talk</div>
+            <% end %>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+  </div>
 </section>
+
+
 
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
@@ -215,3 +194,4 @@ var config = {
 
 window.scrollReveal = new scrollReveal( config );
 </script>
+

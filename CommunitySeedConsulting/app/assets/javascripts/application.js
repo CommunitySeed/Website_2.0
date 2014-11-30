@@ -14,3 +14,15 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+
+    var pageheight;
+        $(window).scroll(function() {
+         pageheight = $(window).height()*.7;
+         pageheight = 60;
+         if ($("header").offset().top > pageheight) {
+             $("header").addClass("no-display");
+         } else {
+             $("header").removeClass("no-display");
+         }
+     });

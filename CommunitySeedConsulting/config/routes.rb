@@ -1,6 +1,15 @@
 Rails.application.routes.draw do
 
+  get 'contact_us/index'
+
+  get 'volunteers/index'
+
+  get 'community_partner/index'
+
+  get 'about_us/index'
+
   get "home" => "home#index"
+
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
